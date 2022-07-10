@@ -65,6 +65,8 @@ public interface ILauncherConfig
     public string? WineBinaryPath { get; set; }
 
     public bool? GameModeEnabled { get; set; }
+    
+    public bool? MangoHudEnabled { get; set; }
 
     public bool? DxvkAsyncEnabled { get; set; }
 
