@@ -30,7 +30,7 @@ public class SettingsTabWine : SettingsTab
                 CheckVisibility = () => RuntimeInformation.IsOSPlatform(OSPlatform.Linux),
                 CheckValidity = b =>
                 {
-                    if (b == true && !File.Exists("/lib/libgamemodeauto.so.0"))
+                    if (b == true && !File.Exists("/usr/lib/libgamemodeauto.so.0"))
                         return "GameMode not detected.";
 
                     return null;
@@ -41,7 +41,7 @@ public class SettingsTabWine : SettingsTab
                 CheckVisibility = () => RuntimeInformation.IsOSPlatform(OSPlatform.Linux),
                 CheckValidity = b =>
                 {
-                    if (b == true && !File.Exists("/lib/libMangoHud.so"))
+                    if (b == true && !File.Exists("/usr/lib/libMangoHud.so"))
                         return "MangoHud not detected.";
 
                     return null;
