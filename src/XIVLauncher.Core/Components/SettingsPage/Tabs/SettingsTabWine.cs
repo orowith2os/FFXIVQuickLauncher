@@ -38,7 +38,7 @@ public class SettingsTabWine : SettingsTab
             },
             new SettingsEntry<bool>("Enable MangoHud", "Enable launching with FlightlessMango's Vulkan/GPU overlay.", () => Program.Config.MangoHudEnabled ?? true, b => Program.Config.MangoHudEnabled = b)
             {
-                CheckVisibility = () => RuntimeInformation.IsOSPlatform(OSPlatform.Linux),
+//                CheckVisibility = () => RuntimeInformation.IsOSPlatform(OSPlatform.Linux),
                 CheckValidity = b =>
                 {
                     if (b == true && !File.Exists("/app/lib/libMangoHud.so"))
